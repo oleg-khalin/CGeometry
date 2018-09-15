@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>CGeometry</title>
+	<link rel='icon' href='img/CGeometry_icon.ico' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='shortcut icon' href='favicon.png' />
+	<link rel='stylesheet' href='libs/bootstrap/bootstrap-grid.min.css' />
+	<link rel='stylesheet' href='libs/font-awesome/css/font-awesome.min.css' />
+	<link rel='stylesheet' href='libs/linea/styles.css' />
+	<link rel='stylesheet' href='libs/magnific-popup/magnific-popup.css' />
+	<link rel='stylesheet' href='libs/animate/animate.min.css' />
+	<link rel='stylesheet' href='css/fonts.css' />
+	<link rel='stylesheet' href='css/main.css' />
+	<link rel='stylesheet' href='css/skins/tomato.css' />
+	<link rel='stylesheet' href='css/media.css' />
+</head>
+<body>
+
+	<div class='loader'>
+		<div class='loader_inner'><!-- Гифка при загрузке -->
+		</div>
+	</div>
+
+	<header class='main_head bg_dark' data-parallax='scroll' data-image-src='img/bg.jpg' data-z-index='1'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col_md_12'>
+					<div class='logo_container'><!-- Логотип -->
+						<a href='#save_btn'><img src='img/CGeometry_icon.ico' /></a>
+					</div>
+					<button class='toggle_mnu'><!-- Кнопка меню -->
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-bottom'></span>
+							<span class='sw-footer'></span>
+						</span>
+					</button>
+					<nav class='top_mnu'><!-- Меню -->
+						<ul>
+							<li><a href='#about'>Про програму</a></li>
+							<li><a href='#theory'>Теорія</a></li>
+							<li><a href='#functions'>Функціонал програми</a></li>
+							<li><a href='#save'>Завантажити</a></li>
+							<li><a href='index.html'>Русский</a> <a class='disactive'>&#160/&#160</a> <a href='index.html' class='disactive'>Українська</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class='top_wrapper'>
+			<div class='top_descr'>
+				<div class='top_centered'>
+					<div class='top_text'>
+						<h1>CGeometry</h1>
+						<p>Задачі обчислювальної геометрії</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- ОБО МНЕ -->
+	<section id='about' class='s_about bg_light'>
+		<div class='section_header'>
+			<h2>Про програму</h2>
+			<div class='s_descr_wrap'>
+				<div class='s_descr'>Коротка інформація про програму</div>
+			</div>
+		</div>
+		<div class='section_content'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-md-4 col-md-push-4 animation_center'>
+						<h3>Фото</h3>
+						<div class='person'>
+							<a href='img/photo.jpg' class='popup'><img src='img/photo.jpg'alt='Фото автора' /></a>
+						</div>
+					</div>
+					<div class='col-md-4 col-md-pull-4 animation_left'>
+						<h3>Коротко про програму</h3>
+						<p>Дана програма призначена для тих хто хоче вивчати математику і для розв'язання задач інформатики.</p>
+						<p>Існує певний комплект основних задач, які є з одного боку самостійними задачами, а з іншого боку базовими для розв'язання більш складних, олімпіадних задач з програмування.</p>
+						<p>Я спробував запрограмувати розв'язання цих задач за їх математичним алгоритмом і деякі з них візуалізувати покроково.</p>
+						<p>Дана робота може бути корисною як ресурс учням для самоосвіти, так і вчителям як демонстраційна програма.</p>
+					</div>
+					<div class='col-md-4 animation_right personal_last_block'>
+						<h3>Персональна інформація</h3>
+						<h2 class='personal_header'>Халін Олег</h2>
+						<ul>
+							<li>Учень 11-А класу</li>
+							<li>Ліцея інформаційних технологій при Дніпропетровському національному уніваерситеті імені Олеся Гончара</li>
+							<!-- <li>E-mail: <a class='email_a' href='mailto:halin@dlit.dp.ua'>halin@dlit.dp.ua</a></li> -->
+							<li>E-mail: <img src="img/mail.png" alt="Mail"></li>
+						</ul>
+						<div class='social_wrap'>
+							<ul>
+								<li><a href='https://twitter.com/CCgeometry' target='_blank'><i class='fa fa-twitter'></i></a></li>
+								<li><a href='#' target='_blank'><i class='fa fa-vk'></i></a></li>
+								<li><a href='https://www.facebook.com/profile.php?id=100010661687202' target='_blank'><i class='fa fa-facebook'></i></a></li>
+								<li><a href='https://www.instagram.com/cgeometry_/' target='_blank'><i class='fa fa-instagram'></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ТЕОРИЯ -->
+	<section id='theory' class='s_theory'>
+		<div class='section_header'>
+			<h2>Теорія</h2>
+			<div class='s_descr_wrap'>
+				<div class='s_descr'>Теоретичні відомості , які використовувалися в програмі</div>
+			</div>
+		</div>
+		<div class='section_content'>
+			<div class='container'>
+				<div class='row'>
+					<div class='theory_container'>
+						<div class='col-md-12 col-sm-12 left'>
+							<div class='theory_icon'>
+								<i class='fa fa-book'></i>
+							</div>
+							<div class='theory_item'>
+								<div class='teory'>Побудова опуклої оболонки для множини з N точок площини</div>
+								<p>Опуклою оболонкою деякої заданої безлічі точок називається перетин усіх опуклих великих множин, що містять задану множину. Для кінцевої безлічі точок опуклої оболонки завжди буде опуклий многокутник, усі вершини якого є точками початкової великої кількості.</p>
+								<p>Завдання полягає в тому, щоб для заданої кінцевої безлічі точок знайти вершини опуклої оболонки цієї великої кількості. Перераховуватимемо вершини в порядку обходу проти годинникової стрілки. Для ефективного вирішення цього завдання існує декілька різних алгоритмів. Приведемо найбільш просту реалізацію одного з них - алгоритму Джарвіса. Цей алгоритм іноді називають «завертанням подарунка».</p>
+								<img src='img/theory/1.png' alt='Построение'>
+								<p>Перерахування точок шуканої межі опуклого многокутника розпочнемо з правої нижньої точки P<sub>1</sub>, яка свідомо належить межі опуклої оболонки. Позначимо її координати (x<sub>1</sub>, y<sub>1</sub>). Наступною при вказаному порядку обходу буде точка P<sub>2</sub> (x<sub>2</sub>, y<sub>2</sub>). Вона, очевидно, має ту властивість, що усі інші точки лежать «зліва» від вектору P<sub>1</sub>P<sub>2</sub> тобто орієнтований кут між векторами P<sub>1</sub>P<sub>2</sub> і P<sub>1</sub>M невід'ємний для будь-якої точки M нашої множини. Для кандидата на роль точки P<sub>2</sub> перевіряємо виконання умови [P<sub>1</sub>P<sub>2</sub>, P<sub>1</sub>M] ? 0 з усіма точками M. Якщо точок, що задовольняють цій умові, декілька, то вершиною шуканого многокутника стане та з них, для якої довжина вектору P<sub>1</sub>P<sub>2</sub> = (x<sub>2</sub> - x<sub>1</sub>, y<sub>2</sub> - y<sub>1</sub>) максимальна.</p>
+								<p>Поступатимемо так само і далі. Припустимо, вже знайдена i-а вершина P<sub>i</sub> (x<sub>i</sub>, y<sub>i</sub>) опуклої оболонки. Для наступної точки P<sub>i+1</sub> (x<sub>i+1</sub>, y<sub>i+1</sub>) косі добутки [P<sub>i</sub>P<sub>i+1</sub>, P<sub>i</sub>M] невід’ємні для всіх точок M. Якщо таких точок декілька, то вибираємо ту, для якої вектор P<sub>i</sub>P<sub>i+1</sub> має найбільшу довжину. Безпосередньо пошук такої точки можна здійснювати так. Спочатку ми можемо вважати наступною, (i+1)-й, будь-яку точку. Потім обчислюємо значення [P<sub>i</sub>P<sub>i+1</sub>, P<sub>i</sub>M], розглядаючи в якості M усі інші точки. Якщо для однієї з них вказане вираження менше нуля, вважаємо наступною її і продовжуємо перевірку інших точок (аналогічно алгоритму пошуку мінімального елементу в масиві). Якщо ж значення вираження дорівнює нулю, то порівнюємо квадрати довжин векторів. В результаті за O(N) операцій чергова вершина опуклої оболонки буде знайдена. Продовжуючи цю процедуру, ми рано чи пізно повернемося до точки P<sub>1</sub>. Це означатиме, що опукла оболонка побудована.</p>
+								<p>При розв’язку цієї задачі у разі спочатку цілочисельних координат ми повністю можемо уникнути застосування речової арифметики, а отже, позбавитися від втрати точності обчислень. Інакше в рішення можуть бути включені «зайві» точки, близькі до межі опуклої оболонки, або не враховані деякі з «потрібних» точок. Складність цього алгоритму складе O(kN), де k – кількість точок в опуклій оболонці, у гіршому разі рівне N.</p>
+								<p>Існує інший алгоритм рішення цієї задачі (алгоритм Грехема) з обчислювальною складністю O(N log⁡N), грунтований на попередньому сортуванні точок початкової великої кількості за значенням кута в полярній системі координат з центром в одній з точок опуклої оболонки. Тобто найбільш трудомістким завданням виявляється саме сортування вихідних точок. Сортування точок можна робити по знаку косого добутку [P<sub>1</sub>P<sub>i</sub>, P<sub>1</sub>P<sub>i+1</sub>], де P<sub>1</sub> – будь-яка вершина опуклої оболонки (наприклад, все та ж права нижня точка). У відсортованому масиві точок усі вказані твори мають бути невід'ємні. Точки з різними кутами ([P<sub>1</sub>P<sub>i</sub>, P<sub>1</sub>P<sub>i+1</sub>] = 0) Розташовуються в порядку збільшення довжин відповідних векторів P<sub>1</sub>P<sub>i</sub>.</p>
+								<img src='img/theory/2.png' alt='Построение'>
+								<p>Далі перегляд Грехема використовує стек, в якому зберігаються точки, що є кандидатами в опуклу оболонку. Спочатку в стек поміщається перша з відсортованих точок. Потім - сусідня з нею вершина опуклої оболонки. Якщо на першому з променів точок декілька, то це точка цього променю P<sub>i</sub>, найбільш віддалена від P<sub>1</sub>. Третя – точка P<sub>i+1</sub>. Нехай у вершині стека знаходиться точка P<sub>k</sub>. Розглянемо наступну в порядку збільшення полярного кута точку початкової множини P<sub>i</sub>. Поки ділянкою ламаної P<sub>k-1</sub>P<sub>k</sub>P<sub>i</sub> не є опуклим, із стоку видаляється чергова точка P<sub>i</sub> поміщається в стек. У момент закінчення перегляду усіх точок в стоку знаходитимуться в точності усі вершини опуклої оболонки. Оскільки будь-яка точка додається в стік рівно один раз, то і віддаляється вона з нього не більше одного разу, тому час перегляду складає O(N).</p>
+							</div>
+							<div class='theory_item'>
+								<div class='teory'>Перевірка опуклості многокутника</div>
+								<p>Опуклість многокутника з вершинами P<sub>1</sub>, P<sub>2</sub>, ..., P<sub>n</sub> перерахованими в порядку його обходу, легко перевірити, якщо вичислити знаки косих добутків [<span>P<sub>i</sub>P<sub>i+1</sub></span>, P<sub>i+1</sub>P<sub>i+2</sub>], i = 1, ..., n (в данному випадку P<sub>n+1</sub> є P<sub>1</sub>, a P<sub>n+2</sub> - P<sub>2</sub>). У опуклого многокутника знаки усіх вказаних добутків або недодатні, або невід'ємні (тобто знаки ненульових добутків співпадають). Якщо ми знаємо напрям обходу, то знак косих добутків для опуклого многокутника визначений: при обході за годинниковою стрілкою усі косі добутки недодатні, а проти годинникової стрілки - невід'ємні.</p>
+								<p class='theory_center'>Опуклий многокутник:</p>
+								<img src='img/theory/4.png' alt='Построение'>
+								<p class='theory_center'>Неопуклий многокутник:</p>
+								<img src='img/theory/5.png' alt='Построение'>
+							</div>
+							<div class='theory_item'>
+								<div class='teory'>Перевірка приналежності точки внутрішньої області многокутника</div>
+								<p>Нехай M – деяка точка площини. Вимагається визначити її місцезнаходження відносно замкнутої ламаної, що є межею многокутника. Розглянемо спочатку випадок опуклого многокутника. Нехай задані своїми координатами вершини многокутника P<sub>0</sub>, P<sub>1</sub>, ..., P<sub>n-1</sub> перераховані в порядку його обходу проти годинникової стрілки. При такому обході многокутник лежить ліворуч межі. І, значить, якщо точка M лежить усередині многокутника, то орієнтований кут між векторами P<sub>i</sub>M і P<sub>i</sub>P<sub>i+1</sub> від'ємний. Тому нам досить підрахувати величину косих добутків [P<sub>i</sub>M, P<sub>i</sub>P<sub>i+1</sub>], i = 0, 1, ..., n-1; значення i+1 береться по модулю n. Якщо усі отримані при цьому значення від’ємні, то точка M внутрішня. Якщо ж одне з них дорівнює нулю, а усі інші від’ємні, то M належить межі многокутника (переконайтеся, що просто рівність нулю одного зі значень не досить). У протилежному випадку M лежить поза нашим многокутником.</p>
+								<p>Розглянемо тепер довільний многокутник. Проведемо горизонтальний промінь з точки M, наприклад, вліво. Оскільки многокутник обмежений, то завжди легко вказати на цьому промені точку P(x,y), свідомо йому не прилеглу. Далі підрахуємо кількість перетинів відрізку PM з межею многокутника. Якщо воно дорівнює нулю або парне, то точка M лежить поза многокутником, інакше - всередині нього.</p>
+								<p>Кількість перетинів відрізку PM з межею ми підрахуємо, розглянувши по черзі перетин відрізку PM з кожною з ланок ламаної. При цьому можливі наступні особливі випадки.</p>
+								<ol>
+									<li>Одна з ланок ламаної прямої цілком міститься усередині відрізку PM.</li>
+									<li>Ланка ламаної торкається відрізку PM.</li>
+									<li>M належить одній з ланок ламаної.</li>
+								</ol>
+								<p>У останньому випадку M належить межі многокутника, і в підрахунку загального числа перетинів необхідності немає. Для двох перших випадків поступимо таким чином. У першому випадку припинення ігноруватимемо. У другому - додатково перевіримо, «нижнім» або «верхнім» кінцем ланка ламаної торкається горизонтального відрізку PM. Якщо точкою дотику є «нижній» кінець ланки, то перетин ігнорується, а якщо «верхній» - то зачитується. З урахуванням цієї угоди торкання відрізку PM межі многокутника в одних точках ігнорується, а в інших точках вважається двічі. Це не змінить парності числа перетинів, а тільки вона важлива при пошуку відповіді на питання цього завдання. Якщо ж відрізок дійсно перетинає ламану в її вершині, то, за нашою угодою, число перетинів якраз збільшиться на одиницю (перетин з верхнім ребром зарахований не буде, а з нижнім - буде). Наприклад, на малюнку нижче кількість перетинів для верхнього з досліджуваних точок буде рівна чотирьом (торкання зараховане двічі), а для нижньої точки - трьом (торкання не враховане, а перетин у вершині ламаній врахований один раз).</p>
+								<img src='img/theory/3.png' alt='Построение'>
+							</div>
+							<div class='theory_item'>
+								<div class='teory'>Коло, що «охоплює» N точок площини</div>
+								<p>Це завдання полягає у знаходженні координат центру кола мінімально можливого радіуса, всередині якої знаходяться всі задані точки. Іноді цю проблему називають мінімаксним завданням «про культурний центр». У ній потрібно за координатами будинків у місті підібрати місце для будівництва культурного центру так, щоб відстань до максимально віддаленого від нього будинку було мінімальним. Для того щоб зрозуміти рішення цієї задачі в загальному випадку , розглянемо спочатку «трикутний» варіант: N=3.</p>
+								<p>Навіть для трьох точок вид розв'язку залежить від їх взаємного розташування. Нехай точки лежать на одній прямій або утворюють тупокутний трикутник. Тоді шукана точка лежить на середині відрізка, що з'єднує найбільш віддалені один від одного точки (у середині найбільшої сторони тупокутного трикутника). Справді, відстань від цієї точки до будь-якої з перших двох зменшити не можна, а третя точка знаходиться на меншій відстані від знайденої точки, отже вона лежить всередині кола, діаметр якого утворюють дві інші точки. А для гострокутного трикутника розв'язком є центр описаного навколо нього кола (зміщення шуканої точки від нього в будь-якому напрямку призведе до збільшення відстані хоча б до однієї з точок). Прямокутний трикутник є «прикордонним» для цих двох випадків, тобто для нього шукану точку можна знаходити будь-яким з описаних способів (звичайно, перший спосіб обчислювально легший).</p>
+								<p>Для довільного N також є два випадки. Якщо знайдуться дві такі точки, що коло, побудована на відрізку, що їх з'єднує як на діаметрі, містить всі інші точки (тобто для них виконується нерівність (x<sub>i</sub> - x<sub>0</sub>)<sup>2</sup> + (y<sub>i</sub> - y<sub>0</sub>)<sup>2</sup> ≤ r<sup>2</sup>, тут (x<sub>0</sub>, y<sub>0</sub>) – центр кола), то ця коло - шукана (фактично це випадок «тупокутного трикутника»). Якщо ж такої пари точок не знайшлося, то шукана коло свідомо проходить хоча б через три з вихідних точок. Тому тепер необхідно перебирати всі трійки точок до тих пір, поки не знайдеться така трійка, що проходить через ці точки коло матиме всередині себе всі інші точки (випадок «гострокутного трикутника»).</p>
+								<img src='img/theory/6.png' alt='Построение'>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Функционал -->
+	<section id='functions' class='s_functions bg_dark'>
+		<div class='section_header'>
+			<h2>Функціонал програми</h2>
+			<div class='s_descr_wrap'>
+				<div class='s_descr'>Приклади використання програми</div>
+			</div>
+		</div>
+		<div class='section_content'>
+			<div class='container'>
+				<div class='row'>
+					<div class='filter_div controls'>
+						<ul>
+							<li class='filter active' data-filter='all'>Всі можливості</li> /
+							<li class='filter' data-filter='.category-1'>Елементарні побудови</li> /
+							<li class='filter' data-filter='.category-2'>Розглянуті задачі обчислювальної геометрії</li>
+						</ul>
+					</div>
+					<div id='functions_grid'>
+						<!-- Точка -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-1'>
+							<img src='img/functions-images/ukr/1.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Точка</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Точка</h3>
+										<p>Щоб побудувати точки необхідно в панелі елементів обрати режим "Точка" і розставити точки в потрібних місцях на полотні. Точки нумеруватимуться цілими числами.</p>
+										<img src='img/functions-images/ukr/1.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Отрезок -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-1'>
+							<img src='img/functions-images/ukr/2.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Відрізок</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Відрізок</h3>
+										<p>Щоб побудувати відрізок необхідно в панелі елементів обрати режим "Відрізок" і розставити дві точки в потрібних місцях на площині. Точки нумеруватимуться літерами латинського алфавіту і цілими числами (A<sub>1</sub>, B<sub>1</sub>, ...). У панелі "Поточний об'єкт" буде вказуватися довжина відрізка.</p>
+										<img src='img/functions-images/ukr/2.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Многоугольник -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-1'>
+							<img src='img/functions-images/ukr/3.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Многокутник</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Многокутник</h3>
+										<p>Щоб побудувати многокутник необхідно в панелі елементів обрати режим "Многокутник" і розставити вершини многокутника в потрібних місцях на площині. Щоб завершити побудову многокутника потрібно натиснути на кнопку "Завершити" в панелі елементів або двічі клікнути клавішою миші по площині. Вершини многокутника нумеруватимуться літерами латинського алфавіту і цілими числами (A<sub>1</sub>, B<sub>1</sub>, ...). У вікні "Поточний об'єкт" будуть вказуватися довжини сторін многокутника і його опуклість.</p>
+										<img src='img/functions-images/ukr/3.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Окружность -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-1'>
+							<img src='img/functions-images/ukr/4.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Коло</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Коло</h3>
+										<p>Щоб побудувати коло необхідно в панелі елементів обрати режим "Коло" і розставити дві точки в потрібних місцях на площині (перша - центр кола, друга - точка кола). У вікні "Поточний об'єкт" будуть вказуватися радіус кола і координати його центру.</p>
+										<img src='img/functions-images/ukr/4.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Переместить -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-1'>
+							<img src='img/functions-images/ukr/5.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Перемістити</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Перемістити</h3>
+										<p>Щоб перемістити об'єкт необхідно в панелі елементів обрати режим "Перемістити", навести курсор на об'єкт і перемістити його в потрібне місце на площині, затиснувши клавішу миші.</p>
+										<img src='img/functions-images/ukr/5.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Закончить -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-1'>
+							<img src='img/functions-images/ukr/6.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Завершити</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Завершити</h3>
+										<p>Щоб закінчити побудову об'єкта необхідно в панелі елементів натиснути кнопку "Завершити".</p>
+										<img src='img/functions-images/ukr/6.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Удалить -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-1'>
+							<img src='img/functions-images/ukr/7.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Видалити</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Видалити</h3>
+										<p>Щоб видалити об'єкт необхідно в панелі елементів обрати режим "Видалити обраний елемент", обрати об'єкт, який потрібно видалити і клікнути на нього.</p>
+										<img src='img/functions-images/ukr/7.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- Опуклая оболочка -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-2'>
+							<img src='img/functions-images/ukr/8.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Опукла оболонка</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Опукла оболонка</h3>
+										<p>Щоб побудувати опуклу оболонку необхідно в панелі задач обрати режим "Опукла оболонка" і розставити точки в потрібних місцях на площині інструментом "Точка". Точки нумеруватимуться цілими числами. Оболонка буде будуватися автоматично. Після побудови опуклої оболонки слід в панелі завдань натиснути на кнопку "Відключити задачу".</p>
+										<img src='img/functions-images/ukr/8.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Проверка опуклости -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-2'>
+							<img src='img/functions-images/ukr/9.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Перевірка опуклості</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Перевірка опуклості</h3>
+										<p>Щоб перевірити оболонку на опуклість необхідно в панелі задач обрати режим "Перевірити на опуклість" і клікнути на многокутник який необхідно перевірити на опуклість.</p>
+										<img src='img/functions-images/ukr/9.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Проверка Пренадлежности точки -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-2'>
+							<img src='img/functions-images/ukr/10.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Перевірка приналежності точки многокутнику</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Перевірка приналежності точки многокутнику</h3>
+										<p>Щоб перевірити приналежність точки многокутнику необхідно в панелі задач обрати режим "Точка всередині многокутника" і клікнути на місце розташування точки яку потрібно перевірити.</p>
+										<img src='img/functions-images/ukr/10.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Минимальная окружность -->
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-2'>
+							<img src='img/functions-images/ukr/11.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Коло, що «охоплює» N точок площини</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Коло, що «охоплює» N точок площини</h3>
+										<p>Щоб побудувати коло мінімального радіуса, що "охоплює" N точок площини необхідно в панелі задач обрати режим "Мінімальне коло навколо точок" і розставити точки в потрібних місцях на площині. Коло будується автоматично. Після побудови кола слід у панелі завдань натиснути на кнопку "Відключити задачу".</p>
+										<img src='img/functions-images/ukr/11.png' alt='Работа' />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class='mix col-md-3 col-sm-6 col-xs-12 functions_item category-2'>
+							<img src='img/functions-images/ukr/12.png' alt='Работа' />
+							<div class='port_item_cont'>
+								<h3>Анімація опуклої оболонки</h3>
+								<p>Інформація</p>
+								<a href='#' class='popup_content'>Переглянути</a>
+							</div>
+							<div class='hidden'>
+								<div class='port_descr'>
+									<div class='modal-box-content'>
+										<button class='mfp-close' type='button' title='Закрыть (Esc)'>×</button>
+										<h3>Анімація опуклої оболонки</h3>
+										<p>Щоб побудувати опуклу оболонку покроково необхідно натиснути кнопку "Анімація опуклої оболонки" і побудується опукла оболонка навколо розставлених попередньо точок інструментом "Точка". Після побудови опуклої оболонки слід в панелі завдань натиснути на кнопку "Відключити задачу".</p>
+										<video controls="controls" poster="img/functions-images/ukr/12.png" loop="loop">
+											<source src="video/ice_video_20151128-130306.mp4" />
+										</video>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Скачать -->
+	<section id='save' class='s_save bg_light'>
+		<div class='section_header'>
+			<h2>Завантажити програму</h2>
+			<div class='s_descr_wrap'>
+				<div class='s_descr'>Дякую за вибір даної програми</div>
+			</div>
+		</div>
+		<div class='section_content'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-md-12'>
+						<div class='save_container'>
+							<img src='img/CGeometry_icon.ico' />
+							<a id='save_btn' class='save_file bg_dark' href='https://yadi.sk/d/2zbk_K4Ikpr8J' target='_blank'>Завантажити зараз</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- FOOTER -->
+		<footer class='main_footer bg_dark'>
+			<div class='container'>
+				<div class='col-md-12'>
+					&copy; 2015 Халін Олег
+					<div class='social_wrap'>
+						<ul>
+							<li><a href='https://twitter.com/CCgeometry' target='_blank'><i class='fa fa-twitter'></i></a></li>
+							<li><a href='#' target='_blank'><i class='fa fa-vk'></i></a></li>
+							<li><a href='https://www.facebook.com/profile.php?id=100010661687202' target='_blank'><i class='fa fa-facebook'></i></a></li>
+							<li><a href='https://www.instagram.com/cgeometry_/' target='_blank'><i class='fa fa-instagram'></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class='hidden'></div>
+	<!--[if lt IE 9]>
+	<script src='libs/html5shiv/es5-shim.min.js'></script>
+	<script src='libs/html5shiv/html5shiv.min.js'></script>
+	<script src='libs/html5shiv/html5shiv-printshiv.min.js'></script>
+	<script src='libs/respond/respond.min.js'></script>
+	<![endif]-->
+	
+	<script src='libs/jquery/jquery-2.1.3.min.js'></script>
+	<script src='libs/parallax/parallax.min.js'></script>
+	<script src='libs/magnific-popup/jquery.magnific-popup.min.js'></script>
+	<script src='libs/mixitup/mixitup.min.js'></script>
+	<script src='libs/scroll2id/PageScroll2id.min.js'></script>
+	<script src='libs/waypoints/waypoints.min.js'></script>
+	<script src='libs/animate/animate-css.js'></script>
+	<script src='libs/jqBootstrapValidation/jqBootstrapValidation.js'></script>
+	<script src='js/common.js'></script>
+	<script src='libs/smothscroll/smoothscroll.js'></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

@@ -1,0 +1,473 @@
+@import 'bourbon/bourbon'
+
+body
+	-webkit-font-smoothing: antialised
+	font-family: 'Raleway', sans-serif
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.6
+	min-width: 320px
+	position: relative
+	div
+		cursor: default
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+section,
+.main_head
+	position: relative
+	h3
+		font-size: 12px
+		font-weight: 400
+		margin-bottom: 35px
+		margin-top: 0
+		text-align: center
+		text-transform: uppercase
+
+// Секции(все кроме хэдэра)
+section
+	padding: 70px 0 90px
+	h2
+		font-size: 24px
+		margin: 0 0 15px
+		text-align: center
+		text-transform: uppercase
+	.personal_header
+		color: #555
+		font-size: 13px
+		margin-bottom: 30px
+		text-align: left
+
+.s_descr_wrap
+	text-align: center
+	.s_descr
+		display: inline-block
+		font-size: 12px
+		font-weight: 600
+		margin-bottom: 130px
+		position: relative
+		text-transform: uppercase
+		&::after
+			content: ''
+			height: 1px
+			left: 50%
+			margin-left: -75px
+			margin-top: 60px
+			position: absolute
+			width: 150px
+
+.main_head
+	min-height: 480px
+	padding-top: 20px
+
+// Анимация загрузки перед загрузкой сайта
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-color: #fff
+		background-image: url('../img/preloader.gif')
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		height: 60px
+		left: 50%
+		margin-left: -30px
+		margin-top: -30px
+		position: absolute
+		top: 50%
+		width: 60px
+
+// Лого
+.logo_container
+	float: left
+
+// Все картинки
+svg
+	height: 60px
+	position: relative
+	width: 60px
+	z-index: 1
+
+// Иконка меню
+.toggle_mnu
+	border: none
+	height: 60px
+	position: fixed
+	right: 20px
+	top: 20px
+	width: 60px
+	z-index: 100
+	span
+		display: block
+
+// Анимация при нажатии на кнопку меню
+$w: 28px
+$h: 3px
+
+.sandwich 
+	bottom: 0
+	height: $w
+	left: 0
+	margin: auto
+	position: absolute
+	right: 0
+	top: 8px
+	width: $w
+	z-index: 200
+
+.sw-topper
+	background: rgb(255, 255, 255)
+	border-radius: 4px 4px 4px 4px
+	border: none
+	height: $h
+	position: relative
+	top: 0
+	transition: transform 0.5s, top 0.2s
+	width: $w 
+
+.sw-bottom
+	background: rgb(255, 255, 255)
+	border-radius: 4px 4px 4px 4px
+	border: none
+	height: $h
+	position: relative
+	top: $h * 2.2
+	transition-delay: 0.2s, 0s
+	transition: transform 0.5s, top 0.2s
+	width: $w
+
+svg
+	path
+		fill: #e0e0e0
+
+.sw-footer
+	background: rgb(255, 255, 255)
+	border-radius: 4px 4px 4px 4px
+	border: none
+	height: $h
+	position: relative
+	top: $h * 4.5
+	transition-delay: 0.1s
+	transition: all 0.5s
+	width: $w
+
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+// Оформление меню
+.top_mnu
+	background-color: rgba(0,0,0,.9)
+	display: none
+	height: 100%
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 50
+	ul,
+	li
+		list-style-type: none
+		margin: 0
+		padding: 0
+	ul
+		margin-top: 180px
+		text-align: center
+		+animation-duration(.01s)
+		li
+			&:nth-child(1) a
+				+animation-delay(0)
+			&:nth-child(2) a
+				+animation-delay(.1s)
+			&:nth-child(3) a
+				+animation-delay(.2s)
+			&:nth-child(4) a
+				+animation-delay(.3s)
+		a
+			color: #fff
+			display: block
+			font-size: 12px
+			height: 60px
+			opacity: 0
+			outline: none
+			position: relative
+			text-transform: uppercase
+			span
+				display: block
+				position: relative
+				top: -40px
+				left: 0
+				height: 100%
+				+transition(all 0.5s ease)
+				&:hover
+					background-color: rgba(255,255,255,.08)
+
+// Надпись с фамилией и услугами
+.top_wrapper
+	display: table
+	height: 100%
+	left: 0
+	position: absolute
+	top: 0
+	width: 100%
+	z-index: 10
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		+transition(all 1s ease)
+		h1
+			+animation-delay(.5s)
+			background-color: rgba(0,0,0,.4)
+			border: 8px solid #fff
+			border-radius: 33%
+			color: #fff
+			display: inline-block
+			font-size: 2.8em
+			font-weight: bold
+			margin-left: 20px
+			margin-right: 20px
+			padding: 10px 35px
+			text-transform: uppercase
+		p
+			margin: 0
+			text-transform: uppercase
+			+animation-delay(1s)
+
+// Класс который создается в js
+.h_opacify
+	opacity: 0.3
+	+transition(all .2s ease)
+
+.main_footer
+	font-size: 13px
+	font-weight: 300
+	padding: 50px 0
+	.social_wrap
+		float: right
+		line-height: 0
+		ul
+			margin: 0
+
+// Фото в часте Обо мне
+.person
+	margin-bottom: 35px
+	text-align: center
+	img
+		border-radius: 50%
+		display: inline-block
+		max-width: 220px
+
+.s_about
+	p
+		margin-bottom: 25px
+	ul,
+	li
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		margin-bottom: 10px
+	.social_wrap
+		margin-top: 25px
+
+
+.social_wrap
+	li
+		display: inline-block
+		font-size: 20px
+		padding: 0 3px
+
+.popup
+	cursor: 'hand'
+
+// Резюме
+.resume_container
+	.left
+		text-align: right
+		border-right: #d2d2d2 1px solid
+		h3
+			text-align: right
+		.resume_discription
+			strong
+				margin-left: 10px
+	.right
+		text-align: left
+		h3
+			text-align: left
+		.resume_discription
+			strong
+				margin-right: 10px
+	h3
+		margin-top: 30px
+	.resume_icon
+		font-size: 40px
+		margin-bottom: 35px
+	.year
+		color: #fff
+		font-weight: 600
+		font-style: italic
+		display: inline-block
+		padding: 0 15px
+		margin-bottom: 15px
+	.resume_discription
+		font-style: italic
+		strong
+			font-weight: 600
+			font-style: normal
+			text-transform: uppercase
+	.resume_item
+		margin-bottom: 40px
+		p
+			margin-top: 10px
+		&:last-child
+			margin-bottom: 0
+			p
+				margin-bottom: 0
+
+// Портфолио
+.s_portfolio
+	ul,
+	li
+		list-style-type: none
+		margin: 0
+		padding: 0
+		text-align: center
+	li
+		cursor: pointer
+		display: inline-block
+		font-style: 12px
+		line-height: 2
+		margin: 0 10px
+		text-transform: uppercase
+	ul
+		margin-bottom: 50px
+	.portfolio_item
+		display: none
+		padding: 0
+		img
+			width: 100%
+		.port_item_cont
+			background-color: rgba(0,0,0,.8)
+			height: 100%
+			left: 0
+			opacity: 0
+			padding-top: 15%
+			position: absolute
+			text-align: center
+			top: 0
+			transition: all .5s
+			width: 100%
+		&:hover .port_item_cont
+			opacity: 1
+			padding-top: 20%
+		h3
+			color: #fff
+			margin-bottom: 0
+		a
+			background-color: transparent
+			border: #fff 1px solid
+			display: inline-block
+			padding: 2px 10px
+
+.port_descr
+	background-color: #fff
+	margin: auto
+	max-width: 500px
+	p,
+	h3
+		padding: 20px
+		padding-bottom: 0
+	h3
+		margin-bottom: 0
+		text-align: center
+		text-transform: uppercase
+		text-wrap: 400px
+		margin-top: 20px
+		padding-top: 25px
+	p
+		margin-top: 0
+	img
+		width: 100%
+		margin-top: 10px
+
+.modal-box-content
+	position: relative
+
+.contact_box
+	margin-bottom: 30px
+	h3
+		text-align: left
+		color: #000
+		margin-bottom: 0px
+		font-size: 14px
+	.contacts_icon
+		font-size: 30px
+	p
+		margin-top: 5px
+
+.main_form
+	button
+		border: none
+		color: #fff
+		line-height: 40px
+		padding: 0 25px
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 600
+		margin-top: 10px
+		float: right
+
+.form-group
+	display: block
+	margin-bottom: 20px
+	.color_element
+		font-weight: 700
+		font-size: 18px
+	.text-danger
+		font-size: 11px
+		margin-top: 5px
+		display: block
+		ul,
+		li
+			margin: 0
+			padding: 0
+			list-style-type: none
+	input,
+	textarea
+		display: block
+		width: 100%
+		border: 1px solid #ccc
+		margin-top: 5px
+		line-height: 40px
+		text-indent: 12px
+		font-size: 12px
+		background-color: transparent
